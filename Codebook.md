@@ -77,10 +77,10 @@ tBodyGyroMagstd|10|Standard deviation of the angular velocity for the Jerk signa
 tBodyGyroJerkMagmean|10Mean of the  linear acceleration for the Jerk signal|0.00000001 to 0.99999999
 tBodyGyroJerkMagstd|10|Standard deviation of the angular velocity for the Jerk signal|0.00000001 to 0.99999999
 fBodyAccmeanX|10|Mean of the Fast Fourier Transform in the body linear acceleration in the X axis.|0.00000001 to 0.99999999
-fBodyAccmeanY|10Mean of the Fast Fourier Transform in the body linear acceleration in the Y axis.|0.00000001 to 0.99999999
+fBodyAccmeanY|10|Mean of the Fast Fourier Transform in the body linear acceleration in the Y axis.|0.00000001 to 0.99999999
 fBodyAccmeanZ|10|Mean of the Fast Fourier Transform in the body linear acceleration in the Z axis.|0.00000001 to 0.99999999
 fBodyAccstdX|10|Standard deviation of the Fast Fourier Transform in the body linear acceleration in the X axis.|0.00000001 to 0.99999999
-fBodyAccstdY|10Standard deviation of the Fast Fourier Transform in the body linear acceleration in the Y axis.|0.00000001 to 0.99999999
+fBodyAccstdY|10|Standard deviation of the Fast Fourier Transform in the body linear acceleration in the Y axis.|0.00000001 to 0.99999999
 fBodyAccstdZ|10|Standard deviation of the Fast Fourier Transform in the body linear acceleration in the Z axis.|0.00000001 to 0.99999999
 fBodyAccJerkmeanX|10|Mean of the Jerk measure for acceleration in the X axis|0.00000001 to 0.99999999
 fBodyAccJerkmeanY|10|Mean of the Jerk measure for acceleration in the Y axis|0.00000001 to 0.99999999
