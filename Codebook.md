@@ -71,10 +71,10 @@ tBodyAccMagstd|10|Standard deviation of the body linear accelerationin for the J
 tGravityAccMagmean|10|Mean of the  angular velocityfor the Jerk signal|0.00000001 to 0.99999999
 tGravityAccMagstd|10|Standard deviation of the  angular velocityfor the Jerk signal|0.00000001 to 0.99999999
 tBodyAccJerkMagmean|10|Mean of the  linear acceleration for the Jerk signal|0.00000001 to 0.99999999
-tBodyAccJerkMagstd|Standard deviation of the  linear acceleration for the Jerk signal|0.00000001 to 0.99999999
+tBodyAccJerkMagstd|10|Standard deviation of the  linear acceleration for the Jerk signal|0.00000001 to 0.99999999
 tBodyGyroMagmean|10|Mean of the  linear acceleration for the Jerk signal|0.00000001 to 0.99999999
 tBodyGyroMagstd|10|Standard deviation of the angular velocity for the Jerk signal|0.00000001 to 0.99999999
-tBodyGyroJerkMagmean|10Mean of the  linear acceleration for the Jerk signal|0.00000001 to 0.99999999
+tBodyGyroJerkMagmean|10|Mean of the  linear acceleration for the Jerk signal|0.00000001 to 0.99999999
 tBodyGyroJerkMagstd|10|Standard deviation of the angular velocity for the Jerk signal|0.00000001 to 0.99999999
 fBodyAccmeanX|10|Mean of the Fast Fourier Transform in the body linear acceleration in the X axis.|0.00000001 to 0.99999999
 fBodyAccmeanY|10|Mean of the Fast Fourier Transform in the body linear acceleration in the Y axis.|0.00000001 to 0.99999999
@@ -99,6 +99,6 @@ fBodyAccMagstd|10|Standard deviation of the Fast Fourier Transform of accelerati
 fBodyBodyAccJerkMagmean|10|Mean of the Fast Fourier Transform of angular velocity for the jerk measure|0.00000001 to 0.99999999
 fBodyBodyAccJerkMagstd|10|Standard deviation of the Fast Fourier Transform of angular velocity for the jerk measure|0.00000001 to 0.99999999
 fBodyBodyGyroMagmean|10|Mean of the Fast Fourier Transform of angular velocity for the jerk measure|0.00000001 to 0.99999999
-fBodyBodyGyroMagstd|10|Standard deviation of the Fast Fourier Transform of acceleration for the jerk measure|0.00000001 to 0.99999999
+fBodyBodyGyroMagstd|10|Standard deviation of the Fast Fourier Transform of angular velocoty|0.00000001 to 0.99999999
 fBodyBodyGyroJerkMagmean|10|Meanof the Fast Fourier Transform of angular velocity for the jerk measure|0.00000001 to 0.99999999
 fBodyBodyGyroJerkMagstd|10|Standard deviation of the Fast Fourier Transform of angular velocity for the jerk measure|0.00000001 to 0.99999999
