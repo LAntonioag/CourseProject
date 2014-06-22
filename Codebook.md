@@ -60,16 +60,16 @@ tBodyGyromeanZ|10|Mean of the angular velocity in the Z axis|0.00000001 to 0.999
 tBodyGyrostdX|10|Standard deviation of the angular velocity in the X axis|0.00000001 to 0.99999999
 tBodyGyrostdY|10|Standard deviation of the angular velocity in the Y axis|0.00000001 to 0.99999999
 tBodyGyrostdZ|10|Standard deviation of the angular velocity in the Z axis|0.00000001 to 0.99999999
-tBodyGyroJerkmeanX|10
-tBodyGyroJerkmeanY|10
-tBodyGyroJerkmeanZ|10
-tBodyGyroJerkstdX|10
-tBodyGyroJerkstdY|10
-tBodyGyroJerkstdZ|10
-tBodyAccMagmean|10
-tBodyAccMagstd|10
-tGravityAccMagmean|10
-tGravityAccMagstd|10
+tBodyGyroJerkmeanX|10|Mean of the angular velocity in the X axis for the Jerk signal|0.00000001 to 0.99999999
+tBodyGyroJerkmeanY|10|Mean of the angular velocity in the Y axis for the Jerk signal|0.00000001 to 0.99999999
+tBodyGyroJerkmeanZ|10|Mean of the angular velocity in the Z axis for the Jerk signal|0.00000001 to 0.99999999
+tBodyGyroJerkstdX|10|Standard deviation  of the angular velocity in the X axis for the Jerk signal|0.00000001 to 0.99999999
+tBodyGyroJerkstdY|10|Standard deviation  of the angular velocity in the Y axis for the Jerk signal|0.00000001 to 0.99999999
+tBodyGyroJerkstdZ|10|Standard deviation  of the angular velocity in the Z axis for the Jerk signal|0.00000001 to 0.99999999
+tBodyAccMagmean|10|Mean of the body linear accelerationin for the Jerk signal|0.00000001 to 0.99999999
+tBodyAccMagstd|10|Standard deviation of the body linear accelerationin for the Jerk signal|0.00000001 to 0.99999999
+tGravityAccMagmean|10|Mean of the  angular velocityfor the Jerk signal|0.00000001 to 0.99999999
+tGravityAccMagstd|10|Standard deviation of the  angular velocityfor the Jerk signal|0.00000001 to 0.99999999
 tBodyAccJerkMagmean|10
 tBodyAccJerkMagstd|10
 tBodyGyroMagmean|10
@@ -86,15 +86,15 @@ fBodyAccstdZ|10|Standard deviation of the Fast Fourier Transform in the body lin
 fBodyAccJerkmeanX|10|Mean of the Jerk measure for acceleration in the X axis|0.00000001 to 0.99999999
 fBodyAccJerkmeanY|10|Mean of the Jerk measure for acceleration in the Y axis|0.00000001 to 0.99999999
 fBodyAccJerkmeanZ|10|Mean of the Jerk measure for acceleration in the Z axis|0.00000001 to 0.99999999
-fBodyAccJerkstdX|10|
-fBodyAccJerkstdY|10|
-fBodyAccJerkstdZ|10|
-fBodyGyromeanX|10|
-fBodyGyromeanY|10|
-fBodyGyromeanZ|10|
-fBodyGyrostdX|10|
-fBodyGyrostdY|10|
-fBodyGyrostdZ|10|
+fBodyAccJerkstdX|10|Standard deviation of the Jerk measure for acceleration in the X axis|0.00000001 to 0.99999999
+fBodyAccJerkstdY|10|Standard deviation of the Jerk measure for acceleration in the Y axis|0.00000001 to 0.99999999
+fBodyAccJerkstdZ|10|Standard deviation of the Jerk measure for acceleration in the Z axis|0.00000001 to 0.99999999
+fBodyGyromeanX|10|Mean of the Fast Fourier Transform of the agular velocity in the X axis|0.00000001 to 0.99999999
+fBodyGyromeanY|10|Mean of the Fast Fourier Transform of the agular velocity in the Y axis|0.00000001 to 0.99999999
+fBodyGyromeanZ|10|Mean of the Fast Fourier Transform of the agular velocity in the Z axis|0.00000001 to 0.99999999
+fBodyGyrostdX|10|Standard deviation of the Fast Fourier Transform of the agular velocity in the X axis|0.00000001 to 0.99999999
+fBodyGyrostdY|10|Standard deviation of the Fast Fourier Transform of the agular velocity in the Y axis|0.00000001 to 0.99999999
+fBodyGyrostdZ|10|Standard deviation of the Fast Fourier Transform of the agular velocity in the Z axis|0.00000001 to 0.99999999
 fBodyAccMagmean|10|
 fBodyAccMagstd|10|
 fBodyBodyAccJerkMagmean|10|
