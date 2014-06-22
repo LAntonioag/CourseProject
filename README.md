@@ -1,12 +1,12 @@
 Introduction
 =============
-The script perform a merge over a two datasets [Test and Train datasets],  after that create a n
+The script perform a merge over two datasets [Test and Train datasets],  after that create a new tity dataset that contain only the mean and standard deviation of each observation; based in subject and activity.
 
 Enviroment Information
 ======================
 This script was created in Windows 8, and was tested in the same environment; for other operative systems the use of "/" character for move across directories maybe not work.
 
-Script Description - run_analysis.R
+Script process description - run_analysis.R
 ===================================
 The scripts take 8 steps in order to obtain the tidy dataset, this steps are:
 

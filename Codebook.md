@@ -33,91 +33,129 @@ We use the reshape2 library to create a second tidy data set; for do that we fir
 ===============================
 The follinng is the result of the second file called "tidyDataSet.txt".
 
-Subject 			2
-				Subject id in the experiment
-					1 ... 30 Unique ID of each subject.
+Subject 					2
+						Subject id in the experiment
+							1 ... 30 Unique ID of each subject.
 
-Activity 			XXXX
-				Activity perform by the subject
-					WALKING
-					WALKING_UPSTAIRS
-					WALKING_DOWNSTAIRS
-					SITTING
-					STANDING
-					LAYING
+Activity 				XXXX
+						Activity perform by the subject
+							WALKING
+							WALKING_UPSTAIRS
+							WALKING_DOWNSTAIRS
+							SITTING
+							STANDING
+							LAYING
 
+tBodyAccmeanX 				10
+						Mean of the body linear acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+							0.00000001 to 0.99999999
+					0.28858451    0.28858451
+					0.28858451
 
-tBodyAccmeanX 		
-mean of the body linear acceleration in the X axis
 [t] - means time captured at a constant rate of 50 Hz
 
 body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ)
 
-tBodyAccmeanY
-mean of the body linear acceleration in the X axis
+tBodyAccmeanY 				10
+						Mean of the body linear acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
+							0.00000001 to 0.99999999
 
+tBodyAccmeanZ 				10
+						Mean of the body linear acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
+							0.00000001 to 0.99999999
+						
+tBodyAccstdX 				10
+						Standard deviation of the body linear acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
+							0.00000001 to 0.99999999
 
-tBodyAccmeanZ
-tBodyAccstdX
-tBodyAccstdY
-tBodyAccstdZ
-tGravityAccmeanX
-tGravityAccmeanY
-tGravityAccmeanZ
-tGravityAccstdX
-tGravityAccstdY
-tGravityAccstdZ
-tBodyAccJerkmeanX
-tBodyAccJerkmeanY
-tBodyAccJerkmeanZ
-tBodyAccJerkstdX
-tBodyAccJerkstdY
-tBodyAccJerkstdZ
-tBodyGyromeanX
-tBodyGyromeanY
-tBodyGyromeanZ
-tBodyGyrostdX
-tBodyGyrostdY
-tBodyGyrostdZ
-tBodyGyroJerkmeanX
-tBodyGyroJerkmeanY
-tBodyGyroJerkmeanZ
-tBodyGyroJerkstdX
-tBodyGyroJerkstdY
-tBodyGyroJerkstdZ
-tBodyAccMagmean
-tBodyAccMagstd
-tGravityAccMagmean
-tGravityAccMagstd
-tBodyAccJerkMagmean
-tBodyAccJerkMagstd
-tBodyGyroMagmean
-tBodyGyroMagstd
-tBodyGyroJerkMagmean
-tBodyGyroJerkMagstd
-fBodyAccmeanX
-fBodyAccmeanY
-fBodyAccmeanZ
-fBodyAccstdX
-fBodyAccstdY
-fBodyAccstdZ
-fBodyAccJerkmeanX
-fBodyAccJerkmeanY
-fBodyAccJerkmeanZ
-fBodyAccJerkstdX
-fBodyAccJerkstdY
-fBodyAccJerkstdZ
-fBodyGyromeanX
-fBodyGyromeanY
-fBodyGyromeanZ
-fBodyGyrostdX
-fBodyGyrostdY
-fBodyGyrostdZ
-fBodyAccMagmean
-fBodyAccMagstd
-fBodyBodyAccJerkMagmean
-fBodyBodyAccJerkMagstd
-fBodyBodyGyroMagmean
-fBodyBodyGyroMagstd
-fBodyBodyGyroJerkMagmean
-fBodyBodyGyroJerkMagstd
+tBodyAccstdY 				10
+						Standard deviation of the body linear acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
+							0.00000001 to 0.99999999
+
+tBodyAccstdZ 				10
+						Standard deviation of the body linear acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
+							0.00000001 to 0.99999999
+
+tGravityAccmeanX 			10
+						Mean of the gravity acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
+							0.00000001 to 0.99999999
+
+tGravityAccmeanY 			10
+						Mean of the gravity acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
+							0.00000001 to 0.99999999
+
+tGravityAccmeanZ 			10
+						Mean of the gravity acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
+							0.00000001 to 0.99999999
+
+tGravityAccstdX 			10
+						Standard deviation  of the gravity acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
+							0.00000001 to 0.99999999
+
+tGravityAccstdY 			10
+						Standard deviation  of the gravity acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
+							0.00000001 to 0.99999999
+
+tGravityAccstdZ 			10
+						Standard deviation  of the gravity acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
+							0.00000001 to 0.99999999
+
+tBodyAccJerkmeanX 			10
+
+tBodyAccJerkmeanY 			10
+tBodyAccJerkmeanZ 			10
+tBodyAccJerkstdX 			10
+tBodyAccJerkstdY 			10
+tBodyAccJerkstdZ 			10
+
+tBodyGyromeanX 				10
+						Mean of the Euclidean norm in the X axis
+							0.00000001 to 0.99999999
+
+tBodyGyromeanY 				10
+tBodyGyromeanZ 				10
+tBodyGyrostdX 				10
+tBodyGyrostdY  				10
+tBodyGyrostdZ 				10
+tBodyGyroJerkmeanX 			10
+tBodyGyroJerkmeanY 			10
+tBodyGyroJerkmeanZ 			10
+tBodyGyroJerkstdX 			10
+tBodyGyroJerkstdY 			10
+tBodyGyroJerkstdZ 			10
+tBodyAccMagmean 			10
+tBodyAccMagstd 				10
+tGravityAccMagmean 			10
+tGravityAccMagstd 			10
+tBodyAccJerkMagmean 		10
+tBodyAccJerkMagstd 			10
+tBodyGyroMagmean 			10
+tBodyGyroMagstd 			10
+tBodyGyroJerkMagmean 		10
+tBodyGyroJerkMagstd 		10
+fBodyAccmeanX 				10
+fBodyAccmeanY 				10
+fBodyAccmeanZ 				10
+fBodyAccstdX  				10
+fBodyAccstdY 				10
+fBodyAccstdZ 				10
+fBodyAccJerkmeanX 			10
+fBodyAccJerkmeanY 			10
+fBodyAccJerkmeanZ 			10
+fBodyAccJerkstdX 			10
+fBodyAccJerkstdY 			10
+fBodyAccJerkstdZ 			10
+fBodyGyromeanX 				10
+fBodyGyromeanY 				10
+fBodyGyromeanZ 				10
+fBodyGyrostdX 				10
+fBodyGyrostdY 				10
+fBodyGyrostdZ 				10
+fBodyAccMagmean 			10
+fBodyAccMagstd 				10
+fBodyBodyAccJerkMagmean 	10
+fBodyBodyAccJerkMagstd 		10
+fBodyBodyGyroMagmean 		10
+fBodyBodyGyroMagstd 		10
+fBodyBodyGyroJerkMagmean 	10
+fBodyBodyGyroJerkMagstd 	10
