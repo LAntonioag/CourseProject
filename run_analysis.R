@@ -34,9 +34,6 @@ activity_labels[,2] <- as.character(activity_labels[,2]) # cast as character
 
 
 ##Combine and merge [train and test] the datasets -------------------------
-
-
-##Combine and merge the datasets ------------------------------------------
 # Combine each dataset with his respectivly pair
 x_data <- rbind(train_x,test_x)
 subject <-  rbind(subject_train,subject_test)
@@ -49,13 +46,13 @@ raw_data <- data.frame(x_data, subject, activity)
 names_data <- c(as.character(features[,2]), "Subject","Activity")
 names(raw_data) = names_data
 
-# 2. Extracts the measurements on the mean and standard deviation  --------
+##Extracts the measurements on the mean and standard deviation ------------
 index_list <- grep("(.*)(-mean[()]|-std[()])|(Subject|Activity)", names(raw_data))
 
-# Then subset the dataset
+# subset the dataset
 tidy_dataset <- raw_data[,c(index_list)]
 
-# 3. Uses descriptive activity names to name the activities  --------------
+##Apply descriptive activity names to name the activities -----------------
 tidy_dataset[,68] <- as.character(tidy_dataset[,68])
 
 for (k in c(1:dim(tidy_dataset)[1])) {
@@ -69,13 +66,13 @@ for (k in c(1:dim(tidy_dataset)[1])) {
     )
 }
 
-# 4. Appropriately labels the data set with descriptive variable n --------
+##Appropriately labels the data set with descriptive variable names -------
 # Remove Noise characters "() and -"
 names_list <- names(tidy_dataset)
 # gsub("(-|[()])", "", names_list)
 names(tidy_dataset) <- gsub("(-|[()])", "", names_list)
 
-
+##Creating a second, independent tidy data set ----------------------------
 # First apply the melt function [for 68 variables]
 library(reshape2) # Load the reshape2 library
 data_melt <- melt(tidy_dataset, id=c("Subject", "Activity"),measure.vars=names(tidy_dataset)[-c(67,68)])
@@ -83,5 +80,4 @@ data_melt <- melt(tidy_dataset, id=c("Subject", "Activity"),measure.vars=names(t
 # And Finally get the mean for each Subject - activity
 tidyData <- dcast(data_melt,Subject + Activity ~ variable,mean)
 setwd(root_dir)
-
 write.table(tidyData,"tidyDataSet.txt")
