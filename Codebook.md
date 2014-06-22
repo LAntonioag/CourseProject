@@ -31,9 +31,10 @@ We use the reshape2 library to create a second tidy data set; for do that we fir
 =================================
 The follinng is the result of the second file called "tidyDataSet.txt".
 
-Subject				2
-    ```			Subject id in the experiment
-    ```
+ 
+Subject                                 2
+Subject id in the experiment
+    
 					1 ... 30 Unique ID of each subject.
 
 Activity 				XXXX
