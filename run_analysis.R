@@ -56,20 +56,20 @@ names(raw_data) = names_data
 index_list <- grep("(.*)(-mean[()]|-std[()])|(Subject|Activity)", names(raw_data))
 
 # Then subset the dataset
-raw_data <- raw_data[,c(index_list)]
+tidy_dataset <- raw_data[,c(index_list)]
 
 # For 68 Variables
 # 3. Uses descriptive activity names to name the activities  --------------
-raw_data[,68] <- as.character(raw_data[,68])
+tidy_dataset[,68] <- as.character(tidy_dataset[,68])
 
-for (k in c(1:dim(raw_data)[1])) {
-    switch(EXPR = raw_data[k,68],
-           "1" = (raw_data[k,68] <- activity_labels[1,2]),
-           "2" = (raw_data[k,68] <- activity_labels[2,2]),
-           "3" = (raw_data[k,68] <- activity_labels[3,2]),
-           "4" = (raw_data[k,68] <- activity_labels[4,2]),
-           "5" = (raw_data[k,68] <- activity_labels[5,2]), 
-           "6" = (raw_data[k,68] <- activity_labels[6,2])
+for (k in c(1:dim(tidy_dataset)[1])) {
+    switch(EXPR = tidy_dataset[k,68],
+           "1" = (tidy_dataset[k,68] <- activity_labels[1,2]),
+           "2" = (tidy_dataset[k,68] <- activity_labels[2,2]),
+           "3" = (tidy_dataset[k,68] <- activity_labels[3,2]),
+           "4" = (tidy_dataset[k,68] <- activity_labels[4,2]),
+           "5" = (tidy_dataset[k,68] <- activity_labels[5,2]), 
+           "6" = (tidy_dataset[k,68] <- activity_labels[6,2])
     )
 }
 
@@ -79,13 +79,13 @@ for (k in c(1:dim(raw_data)[1])) {
 
 # 4. Appropriately labels the data set with descriptive variable n --------
 
-names_list <- names(raw_data)
+names_list <- names(tidy_dataset)
 # gsub("(-|[()])", "", names_list)
-names(raw_data) <- gsub("(-|[()])", "", names_list)
+names(tidy_dataset) <- gsub("(-|[()])", "", names_list)
 
 # First apply the melt function [for 68 variables]
 library(reshape2) # Load the reshape2 library
-data_melt <- melt(raw_data, id=c("Subject", "Activity"),measure.vars=names(raw_data)[-c(67,68)])
+data_melt <- melt(tidy_dataset, id=c("Subject", "Activity"),measure.vars=names(tidy_dataset)[-c(67,68)])
 
 # And Finally get the mean for each Subject - activity
 tidyData <- dcast(data_melt,Subject + Activity ~ variable,mean)
