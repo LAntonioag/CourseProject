@@ -3,7 +3,7 @@ DATA DICTIONARY - TIDY DATASET
 
 ### INTRODUCTION
 ==============
-The tidy data was generated from two datasets (train and test datasets) each one with his respective data
+The tidy data was generated from two datasets (train and test datasets) each one with his respective data; the original dataset was downloaded from <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
 
 
@@ -27,10 +27,8 @@ In this step we realize some clean in the variable names; so we remove some "noi
 We use the reshape2 library to create a second tidy data set; for do that we firts use the melt function over the tidy_dataset and create a new data using Subject and Activity variables as ID; the result data frame is called data_melt; and using the dcast function we create a new data set from the data_melt that store the mean of each variable according the Subject and Activity variables; this second result is called tidyData; and finally we write the result in a new txt file called "tidyDataSet.txt".
 
 
-
-
-# VARIABLE DESCRIPTION - RESULT
-===============================
+### VARIABLE DESCRIPTION - RESULT
+=================================
 The follinng is the result of the second file called "tidyDataSet.txt".
 
 Subject 					2
@@ -93,11 +91,11 @@ tGravityAccstdX 			10
 							0.00000001 to 0.99999999
 
 tGravityAccstdY 			10
-						Standard deviation  of the gravity acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
+						Standard deviation  of the gravity acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
 							0.00000001 to 0.99999999
 
 tGravityAccstdZ 			10
-						Standard deviation  of the gravity acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
+						Standard deviation  of the gravity acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
 							0.00000001 to 0.99999999
 
 tBodyAccJerkmeanX 			10
@@ -133,12 +131,30 @@ tBodyGyroMagmean 			10
 tBodyGyroMagstd 			10
 tBodyGyroJerkMagmean 		10
 tBodyGyroJerkMagstd 		10
+
 fBodyAccmeanX 				10
+						Mean of the Fast Fourier Transform in the body linear acceleration in the X axis.
+							0.00000001 to 0.99999999
+
 fBodyAccmeanY 				10
+						Mean of the Fast Fourier Transform in the body linear acceleration in the Y axis.
+							0.00000001 to 0.99999999
+
 fBodyAccmeanZ 				10
+						Mean of the Fast Fourier Transform in the body linear acceleration in the Z axis.
+							0.00000001 to 0.99999999
+
 fBodyAccstdX  				10
+						Standard deviation of the Fast Fourier Transform in the body linear acceleration in the X axis.
+							0.00000001 to 0.99999999
+
 fBodyAccstdY 				10
+						Standard deviation of the Fast Fourier Transform in the body linear acceleration in the Y axis.
+							0.00000001 to 0.99999999
+
 fBodyAccstdZ 				10
+						Standard deviation of the Fast Fourier Transform in the body linear acceleration in the Z axis.
+							0.00000001 to 0.99999999
 fBodyAccJerkmeanX 			10
 fBodyAccJerkmeanY 			10
 fBodyAccJerkmeanZ 			10

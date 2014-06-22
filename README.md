@@ -4,7 +4,7 @@ The script perform a merge over two datasets [Test and Train datasets],  after t
 
 Enviroment Information
 ======================
-This script was created in Windows 8, and was tested in the same environment; for other operative systems the use of "/" character for move across directories maybe not work.
+This script was tested in Windows 8; for other operative systems the use of "/" character for move across directories maybe not work.
 
 Script process description - run_analysis.R
 ===================================
