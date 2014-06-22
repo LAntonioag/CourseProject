@@ -31,62 +31,20 @@ We use the reshape2 library to create a second tidy data set; for do that we fir
 =================================
 The follinng is the result of the second file called "tidyDataSet.txt".
 
- 
-Subject                                 2
-Subject id in the experiment
-    
-					1 ... 30 Unique ID of each subject.
 
-Activity 				XXXX
-						Activity perform by the subject
-							WALKING
-							WALKING_UPSTAIRS
-							WALKING_DOWNSTAIRS
-							SITTING
-							STANDING
-							LAYING
-
-tBodyAccmeanX 				10
-						Mean of the body linear acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-							0.00000001 to 0.99999999
-					0.28858451    0.28858451
-					0.28858451
-
-[t] - means time captured at a constant rate of 50 Hz
-
-body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ)
-
-tBodyAccmeanY 				10
-						Mean of the body linear acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
-							0.00000001 to 0.99999999
-
-tBodyAccmeanZ 				10
-						Mean of the body linear acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
-							0.00000001 to 0.99999999
-						
-tBodyAccstdX 				10
-						Standard deviation of the body linear acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
-							0.00000001 to 0.99999999
-
-tBodyAccstdY 				10
-						Standard deviation of the body linear acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
-							0.00000001 to 0.99999999
-
-tBodyAccstdZ 				10
-						Standard deviation of the body linear acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
-							0.00000001 to 0.99999999
-
-tGravityAccmeanX 			10
-						Mean of the gravity acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
-							0.00000001 to 0.99999999
-
-tGravityAccmeanY 			10
-						Mean of the gravity acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
-							0.00000001 to 0.99999999
-
-tGravityAccmeanZ 			10
-						Mean of the gravity acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz..
-							0.00000001 to 0.99999999
+Variable Name | Length | Label | Values
+------------- | -------|-------|-------
+Subject|2|Subject id in the experiment|1 ... 30 Unique ID of each subject
+Activity|18|Activity perform by the subject|WALKING, WALKING_UPSTAIRS, 	WALKING_DOWNSTAIRS, SITTING, STANDING, 	LAYING
+tBodyAccmeanX|10|Mean of the body linear acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.|0.00000001 to 0.99999999
+tBodyAccmeanY|10|Mean of the body linear acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz|0.00000001 to 0.99999999
+tBodyAccmeanZ|10|Mean of the body linear acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.|0.00000001 to 0.99999999
+tBodyAccstdX|10|Standard deviation of the body linear acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.|0.00000001 to 0.99999999
+tBodyAccstdY|10|Standard deviation of the body linear acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.|0.00000001 to 0.99999999
+tBodyAccstdZ|10|Standard deviation of the body linear acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.|0.00000001 to 0.99999999
+tGravityAccmeanX|10|Mean of the gravity acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.|0.00000001 to 0.99999999
+tGravityAccmeanY|10|Mean of the gravity acceleration in the Y axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.|0.00000001 to 0.99999999
+tGravityAccmeanZ|10|Mean of the gravity acceleration in the Z axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.|0.00000001 to 0.99999999
 
 tGravityAccstdX 			10
 						Standard deviation  of the gravity acceleration in the X axis with a low pass Butterworth filter with a corner frequency of 0.3 Hz.
